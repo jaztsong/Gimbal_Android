@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">testproximity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_gimbals_observed">There is no Gimbals found around your vinity!</string>
+    <string name="battery_level">Battery</string>
+    <string name="title_activity_activate_beacon">ActivateBeaconActivity</string>
+
+</resources>

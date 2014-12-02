@@ -1,0 +1,91 @@
+<!--
+
+    Copyright (C) 2013 Qualcomm Retail Solutions, Inc. All rights reserved.
+
+    This software is the confidential and proprietary information of Qualcomm
+    Retail Solutions, Inc.
+
+    The following sample code illustrates various aspects of the Gimbal Android
+    SDK.
+
+    The sample code herein is provided for your convenience, and has not been
+    tested or designed to work on any particular system configuration. It is
+    provided pursuant to the License Agreement for Gimbal Manager AS IS, and your
+    use of this sample code, whether as provided or with any modification, is at
+    your own risk. Neither Qualcomm Retail Solutions, Inc. nor any affiliate
+    takes any liability nor responsibility with respect to the sample code, and
+    disclaims all warranties, express and implied, including without limitation
+    warranties on merchantability, fitness for a specified purpose, and against
+    infringement.
+
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    tools:context=".ProximityTransmittersActivity" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/image_bg"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/avatar_01_2x" />
+    </LinearLayout>
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="A List item title"
+        android:textColor="#040404"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/thumbnail"
+        android:layout_margin="10dip"
+        android:layout_marginTop="20dp"
+        android:progressDrawable="@drawable/progressbar2" />
+
+    <TextView
+        android:id="@+id/temperatureTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignTop="@+id/thumbnail"
+        android:text="78F"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/batteryImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:layout_alignLeft="@+id/temperatureTextField"
+        android:src="@drawable/battery_full" />
+
+</RelativeLayout>
