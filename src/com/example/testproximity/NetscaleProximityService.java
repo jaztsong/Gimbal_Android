@@ -41,8 +41,8 @@ public class NetscaleProximityService extends Service implements ProximityListen
 	final private static String Debug = "Service Debug";
 	private VisitManager visitManager;
 	private ProximityOptions options = new ProximityOptions();
-	final private static String APP_ID="d0caff9673774e77ff588028febbbaef74891156b8d187a4e48d204c306eac15";
-	final private static String APP_SECRET = "a40ab4e209a7b41a9cc0d06f61606f943087c00f382b4e912067fc20b747f835";
+	final private static String APP_ID="XXXX";
+	final private static String APP_SECRET = "XXXX";
 	private BluetoothAdapter mBtAdapter = BluetoothAdapter.getDefaultAdapter();
 	private boolean mbackground = true;
 	final static int MSG_SAY_BACK = 1;
